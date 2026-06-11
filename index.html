@@ -36,4 +36,273 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--cream);color:var(--t
 .sec{padding:44px 24px;max-width:500px;margin:0 auto}
 .sec-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--pk2);text-align:center;margin-bottom:8px}
 .sec-title{font-family:'Zen Kaku Gothic New',sans-serif;font-size:20px;font-weight:900;text-align:center;line-height:1.5;margin-bottom:6px}
-.sec-sub{font-size:13px;color:var(--muted);text-align:center;line-hei
+.sec-sub{font-size:13px;color:var(--muted);text-align:center;line-height:1.7;margin-bottom:24px}
+.divider{width:36px;height:3px;background:var(--pk-grad);border-radius:100px;margin:0 auto 24px}
+.sec-divider{height:1px;background:linear-gradient(90deg,transparent,#FBCFE8,transparent);margin:0 24px}
+
+.waste-box{background:var(--white);border-radius:var(--r);border:1.5px solid #FBCFE8;overflow:hidden;box-shadow:0 4px 20px rgba(240,98,146,0.08)}
+.waste-header{background:linear-gradient(135deg,#424242,#212121);padding:16px 20px;color:#fff;text-align:center;font-size:13px;font-weight:700;line-height:1.6}
+.waste-header .big{font-family:'Zen Kaku Gothic New',sans-serif;font-size:20px;font-weight:900;display:block;margin-bottom:2px}
+.waste-list{padding:16px 20px;display:flex;flex-direction:column;gap:0}
+.waste-item{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px dashed #F5D0E0}
+.waste-item:last-child{border-bottom:none}
+.waste-x{width:24px;height:24px;border-radius:50%;background:#FFEBEE;color:#C62828;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.waste-ttl{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px}
+.waste-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.waste-point{font-size:12px;color:#C62828;font-weight:700;margin-top:3px}
+.waste-footer{background:#FFF3F5;padding:14px 20px;font-size:13px;color:var(--pk2);font-weight:700;text-align:center;line-height:1.6;border-top:1px solid #FBCFE8}
+
+.support-box{background:var(--white);border-radius:var(--r);border:1.5px solid #FBCFE8;overflow:hidden;box-shadow:0 4px 20px rgba(240,98,146,0.10)}
+.support-header{background:var(--pk-grad);padding:18px 20px;color:#fff;text-align:center}
+.support-header .big{font-family:'Zen Kaku Gothic New',sans-serif;font-size:19px;font-weight:900;display:block;margin-bottom:3px}
+.support-header .small{font-size:12px;opacity:.9}
+.support-compare{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #FBCFE8}
+.support-col{padding:18px 16px}
+.support-col:first-child{border-right:1px dashed #FBCFE8;background:#FFF8FB}
+.support-col-ttl{font-size:12px;font-weight:700;text-align:center;margin-bottom:12px;padding:6px;border-radius:8px}
+.col-you .support-col-ttl{background:#FDE8F4;color:var(--pk2)}
+.col-us .support-col-ttl{background:#F3E5F5;color:var(--pur)}
+.support-li{font-size:12px;color:var(--text);line-height:1.6;padding:5px 0;display:flex;gap:6px;align-items:flex-start}
+.support-li::before{content:'✓';font-weight:900;flex-shrink:0}
+.col-you .support-li::before{color:var(--pk2)}
+.col-us .support-li::before{color:var(--pur)}
+.support-footer{padding:14px 20px;text-align:center;font-size:13px;font-weight:700;color:var(--pk2);line-height:1.6;background:#FFF3F5}
+
+.recruit-box{background:linear-gradient(135deg,#FDE8F4,#F3E5F5);border-radius:var(--r);padding:22px 20px;border:1px solid #F0B8DC}
+.recruit-ttl{font-size:14px;font-weight:700;color:var(--pk2);text-align:center;margin-bottom:14px}
+.recruit-item{background:rgba(255,255,255,.75);border-radius:12px;padding:13px 16px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start}
+.recruit-item:last-child{margin-bottom:0}
+.recruit-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.recruit-body .r-ttl{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px}
+.recruit-body .r-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.recruit-body .r-desc strong{color:var(--pk2)}
+.recruit-note{font-size:11px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.6}
+
+.who-list{display:flex;flex-direction:column;gap:10px}
+.who-card{background:var(--white);border-radius:var(--r);padding:15px 18px;display:flex;align-items:flex-start;gap:12px;border:1px solid #FBCFE8;box-shadow:0 2px 8px rgba(240,98,146,0.07)}
+.who-icon{font-size:22px;flex-shrink:0;margin-top:1px}
+.who-text{font-size:13px;line-height:1.75;color:var(--text)}
+.who-text strong{color:var(--pk2)}
+
+.step-box{background:var(--white);border-radius:var(--r);border:1.5px solid #FBCFE8;overflow:hidden;box-shadow:0 4px 20px rgba(240,98,146,0.08)}
+.step-header{background:var(--pk-grad);padding:16px 20px;color:#fff;text-align:center;font-size:13px;font-weight:700;line-height:1.6}
+.step-header .big{font-family:'Zen Kaku Gothic New',sans-serif;font-size:20px;font-weight:900;display:block;margin-bottom:2px}
+.step-list{padding:16px 20px;display:flex;flex-direction:column;gap:0}
+.step-item{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed #FBCFE8}
+.step-item:last-child{border-bottom:none}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--pk-grad);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-ttl{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--text)}
+.step-num-txt{font-size:13px;font-weight:700;color:var(--pk2)}
+.step-desc{font-size:12px;color:var(--muted);line-height:1.6}
+
+.story-box{background:linear-gradient(135deg,#FDE8F4,#F3E5F5);border-radius:var(--r);padding:22px 20px;border:1px solid #F0B8DC}
+.story-tag{font-size:11px;font-weight:700;color:var(--pk2);margin-bottom:12px}
+.story-text{font-size:14px;line-height:1.95;color:var(--text)}
+.story-text strong{color:var(--pur)}
+
+.dream-box{background:linear-gradient(135deg,#FFF8E1,#FFF3DC);border-radius:var(--r);padding:20px;border:1.5px solid #FFE082;text-align:center}
+.dream-label{font-size:11px;color:#B8860B;font-weight:700;margin-bottom:6px}
+.dream-num{font-family:'Zen Kaku Gothic New',sans-serif;font-size:22px;font-weight:900;color:#B8860B;margin-bottom:6px}
+.dream-desc{font-size:12px;color:#7A5E00;line-height:1.7}
+
+.free-box{background:linear-gradient(135deg,#E8F5E9,#F1F8E9);border-radius:var(--r);padding:24px 20px;text-align:center;border:1.5px solid #A5D6A7}
+.free-big{font-family:'Zen Kaku Gothic New',sans-serif;font-size:28px;font-weight:900;color:#2E7D32;margin-bottom:8px}
+.free-desc{font-size:13px;color:#4A7A4E;line-height:1.7}
+
+.footer-cta{background:linear-gradient(160deg,#FCE4EC,#F3E5F5,#EDE7F6);padding:48px 24px 64px;text-align:center}
+.footer-cta h2{font-family:'Zen Kaku Gothic New',sans-serif;font-size:22px;font-weight:900;margin-bottom:10px;line-height:1.5}
+.footer-cta p{font-size:14px;color:var(--muted);margin-bottom:28px;line-height:1.7}
+
+/* 日本語改行の最適化 */
+body{word-break:keep-all;overflow-wrap:anywhere;line-break:strict}
+.hero h1,.sec-title,.step-ttl,.waste-ttl,.r-ttl,.who-text,.story-text,.support-li,
+.hero-sub,.sec-sub,.step-desc,.waste-desc,.r-desc,.free-desc,.dream-desc{word-break:keep-all}
+
+@media(max-width:360px){.hero h1{font-size:21px}.support-compare{grid-template-columns:1fr}.support-col:first-child{border-right:none;border-bottom:1px dashed #FBCFE8}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">🌸 専属サポート付き・無料LINE相談</div>
+  <h1>その稼ぎ方、<br><span class="accent">資産になってる？</span></h1>
+  <p class="hero-sub">パトロン探し・出会い系・ポイ活——<br>時間と体を切り売りするより、<br><strong style="color:var(--pk2)">一度作ったら稼ぎ続ける仕組み</strong>を持とう。</p>
+  <div class="hero-points">
+    <div class="hero-pt"><div class="pt-icon">🎭</div><div class="pt-txt">絡みなし<br>ソロOK</div></div>
+    <div class="hero-pt"><div class="pt-icon">🤝</div><div class="pt-txt">運用は全部<br>おまかせ</div></div>
+    <div class="hero-pt"><div class="pt-icon">📈</div><div class="pt-txt">あなたは<br>撮影だけ</div></div>
+  </div>
+  <a href="https://line.me/ti/p/HfbvZYX3nx" class="btn-line">
+    <svg viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 11.86 4 21.6c0 8.52 7.56 15.66 17.78 17.06.69.15 1.63.46 1.87 1.05.21.54.14 1.38.07 1.92l-.3 1.81c-.09.54-.42 2.1 1.84 1.15 2.26-.96 12.2-7.18 16.64-12.3C45.1 29.3 44 25.58 44 21.6 44 11.86 35.05 4 24 4z"/></svg>
+    LINEで無料相談する
+  </a>
+  <div class="free-note">✨ 相談無料・無理な勧誘はしません</div>
+</div>
+
+<div class="sec">
+  <div class="sec-eyebrow">もったいない稼ぎ方</div>
+  <div class="sec-title">それ、あと何年<br>続けられる？</div>
+  <p class="sec-sub">頑張ってるのに、積み上がってないかもしれない</p>
+  <div class="divider"></div>
+  <div class="waste-box">
+    <div class="waste-header"><span class="big">❌ こんな稼ぎ方してない？</span>時間と体を使っても、資産にならない</div>
+    <div class="waste-list">
+      <div class="waste-item"><div class="waste-x">×</div><div><div class="waste-ttl">パトロン・パパ活探し</div><div class="waste-desc">一人に依存するリスク。関係が切れたら収入もゼロ。</div><div class="waste-point">→ 会うリスクを取り続けるより、会わずに稼げる</div></div></div>
+      <div class="waste-item"><div class="waste-x">×</div><div><div class="waste-ttl">出会い系でお小遣い稼ぎ</div><div class="waste-desc">時間・体・安全リスクを全部消費して、残るものがない。</div><div class="waste-point">→ 同じ労力で、資産になる形にできる</div></div></div>
+      <div class="waste-item"><div class="waste-x">×</div><div><div class="waste-ttl">ポイ活・アンケート・ちまちま副業</div><div class="waste-desc">その時給、計算したことある？積み上がらない時間の使い方。</div><div class="waste-point">→ 一回の作業がずっと稼ぎ続ける仕組みがある</div></div></div>
+      <div class="waste-item"><div class="waste-x">×</div><div><div class="waste-ttl">SNSで投げ銭・チップ待ち</div><div class="waste-desc">プラットフォーム依存で、自分の資産にならない。</div><div class="waste-point">→ 自分のファンを自分で持つ形に変える</div></div></div>
+    </div>
+    <div class="waste-footer">コンテンツは一度作ったら、寝てる間も稼いでくれる🌙</div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">専属サポート体制</div>
+  <div class="sec-title">あなたがやるのは、<br>撮影だけ。</div>
+  <p class="sec-sub">「SNSとか運用とかわからない」でも大丈夫な理由</p>
+  <div class="divider"></div>
+  <div class="support-box">
+    <div class="support-header">
+      <span class="big">🤝 役割分担はこれだけ</span>
+      <span class="small">難しいことは全部こちらでやります</span>
+    </div>
+    <div class="support-compare">
+      <div class="support-col col-you">
+        <div class="support-col-ttl">🌸 あなたがやること</div>
+        <div class="support-li">月2〜4回の撮影に参加</div>
+        <div class="support-li">撮影素材を渡す</div>
+        <div class="support-li">以上！</div>
+      </div>
+      <div class="support-col col-us">
+        <div class="support-col-ttl">💼 こちらでやること</div>
+        <div class="support-li">コーチング・戦略設計</div>
+        <div class="support-li">SNSアカウント運用</div>
+        <div class="support-li">ファンサイトの管理・配信</div>
+        <div class="support-li">プロフ・サムネ・文章作成</div>
+        <div class="support-li">売上を伸ばすマーケティング</div>
+      </div>
+    </div>
+    <div class="support-footer">運用未経験でも、ゼロから一緒に作るから大丈夫🌙</div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">こんな子を探してます</div>
+  <div class="sec-title">あなたの「普通」が、<br>武器になる。</div>
+  <div class="divider"></div>
+  <div class="recruit-box">
+    <div class="recruit-ttl">📍 募集しているのはこんな子</div>
+    <div class="recruit-item">
+      <div class="recruit-icon">🌸</div>
+      <div class="recruit-body">
+        <div class="r-ttl">20代の女の子</div>
+        <div class="r-desc">経験・スキルは一切不要。「変わりたい」気持ちがあればOK。</div>
+      </div>
+    </div>
+    <div class="recruit-item">
+      <div class="recruit-icon">🖤</div>
+      <div class="recruit-body">
+        <div class="r-ttl">黒髪で可愛らしい子・清楚系</div>
+        <div class="r-desc">派手じゃなくていい。むしろ<strong>ナチュラルさが一番人気</strong>のジャンル。</div>
+      </div>
+    </div>
+    <div class="recruit-item">
+      <div class="recruit-icon">💎</div>
+      <div class="recruit-body">
+        <div class="r-ttl">胸が大きいことがコンプレックスだった子</div>
+        <div class="r-desc">隠してきたその悩み、ここでは<strong>最大の強み</strong>に変わります。スタイルや身体に特徴がある子も大歓迎。</div>
+      </div>
+    </div>
+    <div class="recruit-item">
+      <div class="recruit-icon">🚃</div>
+      <div class="recruit-body">
+        <div class="r-ttl">月2〜4回、東京に来られる子</div>
+        <div class="r-desc"><strong>交通費支給</strong>。地方在住でもOK。撮影日だけ来てもらえれば大丈夫。</div>
+      </div>
+    </div>
+    <div class="recruit-note">※18歳以上（高校生不可）・身分証の確認をさせていただきます</div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">こんな人へ</div>
+  <div class="sec-title">こんな気持ち、<br>心当たりない？</div>
+  <div class="divider"></div>
+  <div class="who-list">
+    <div class="who-card"><div class="who-icon">🎭</div><div class="who-text"><strong>AVや絡みは絶対に嫌</strong><br>でも自分を表現しながら名前を売ることには興味がある。</div></div>
+    <div class="who-card"><div class="who-icon">🌟</div><div class="who-text"><strong>コスプレイヤー・モデルとして有名になりたい</strong><br>ファンサイトを土台に、色々なジャンルに挑戦していきたい。</div></div>
+    <div class="who-card"><div class="who-icon">🌙</div><div class="who-text"><strong>今の稼ぎ方に限界を感じてる</strong><br>その日暮らしから抜け出して、積み上がる形に変えたい。</div></div>
+    <div class="who-card"><div class="who-icon">🔒</div><div class="who-text"><strong>運用とか難しいことはわからない</strong><br>でも任せられるなら、やってみたい気持ちはある。</div></div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">リアルな成長イメージ</div>
+  <div class="sec-title">最初の目標は<br>月3万でいい</div>
+  <p class="sec-sub">派手な数字より、現実的な一歩が大事</p>
+  <div class="divider"></div>
+  <div class="step-box">
+    <div class="step-header"><span class="big">はじめの3ヶ月</span>まず「仕組みを持った」という事実を作る</div>
+    <div class="step-list">
+      <div class="step-item"><div class="step-num">1</div><div><div class="step-ttl">LINEで相談・方向性を決める</div><div class="step-desc">あなたの魅力・出せる範囲を一緒に整理。無理のないプランから。</div></div></div>
+      <div class="step-item"><div class="step-num">2</div><div><div class="step-ttl">撮影スタート・運用はおまかせ</div><div class="step-num-txt">あなたは月2〜4回の撮影だけ。</div><div class="step-desc">SNS・ファンサイトの運用は全部こちらで設計します。</div></div></div>
+      <div class="step-item"><div class="step-num">3</div><div><div class="step-ttl">仕組みが育って加速する</div><div class="step-num-txt">月3万 → 月10万 → その先へ</div><div class="step-desc">コンテンツが積み上がるほど、寝てる間も売れる状態に。</div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">Rちゃんの話</div>
+  <div class="sec-title">「絡みは嫌、でも<br>名前を売りたかった」</div>
+  <div class="divider"></div>
+  <div class="story-box">
+    <div class="story-tag">🌸 Rちゃん（26歳・コスプレイヤー志望）</div>
+    <div class="story-text">AVは嫌だった。でも、自分を表現することは好きだった。<br><br>パトロンを探したこともある。出会い系も試した。でもいつも「<strong>これ、積み上がってないな</strong>」と思ってた。<br><br>胸が大きいことも、ずっとコンプレックスだった。<br>でもここでは、それが<strong>一番の武器</strong>になった。<br><br>運用は全部おまかせ。Rちゃんがやったのは撮影だけ。<br><br><strong>設計を変えたら、話が変わり始めた。</strong><br><br>Rちゃんの続きはThreadsで更新中📖</div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec">
+  <div class="sec-eyebrow">ちなみに</div>
+  <div class="sec-title">上を見れば、<br>こんな世界もある</div>
+  <p class="sec-sub">今すぐ目指さなくていい。でも知っておいて損はない。</p>
+  <div class="divider"></div>
+  <div class="dream-box">
+    <div class="dream-label">👑 上位クリエイターの実績</div>
+    <div class="dream-num">月収 1,000万円超え</div>
+    <div class="dream-desc">スタートは皆、年収100〜200万円ほど。仕組みを育てた先に、この数字がある。<br><br><strong style="color:#7A5E00">まず最初の一歩。それだけ考えよう。</strong></div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<div class="sec" style="padding-bottom:0">
+  <div class="free-box">
+    <div class="free-big">相談は無料🌿</div>
+    <div class="free-desc">無理な勧誘はしません。<br>「ちょっと聞いてみたい」くらいで全然OK。<br>合うか合わないか、一緒に考えるところから。</div>
+  </div>
+</div>
+
+<div class="footer-cta" style="margin-top:44px">
+  <h2>まずは気軽に<br>話しかけてみて🌸</h2>
+  <p>返信は24時間以内を目安にしています。<br>どんな小さな質問でも大丈夫。</p>
+  <a href="https://line.me/ti/p/HfbvZYX3nx" class="btn-line">
+    <svg viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 11.86 4 21.6c0 8.52 7.56 15.66 17.78 17.06.69.15 1.63.46 1.87 1.05.21.54.14 1.38.07 1.92l-.3 1.81c-.09.54-.42 2.1 1.84 1.15 2.26-.96 12.2-7.18 16.64-12.3C45.1 29.3 44 25.58 44 21.6 44 11.86 35.05 4 24 4z"/></svg>
+    LINEで無料相談する
+  </a>
+  <div class="free-note" style="margin-top:12px">相談無料・無理な勧誘なし</div>
+</div>
+
+</body>
+</html>
